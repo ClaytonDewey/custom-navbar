@@ -1,0 +1,120 @@
+@use '../util' as *;
+
+.header {
+  position: relative;
+  margin: 0 auto;
+
+  &__ubs--logo {
+    background: var(--clr-white);
+    padding: 2.5rem 1.5rem;
+    margin: auto;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  @include breakpoint(medium) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3rem;
+
+    &__ubs--logo {
+      margin: 0;
+    }
+  }
+}
+
+// Navbar Toggle
+.navbar {
+  &__small {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 1.5rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+
+    i {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    > * {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.5rem;
+      width: 7rem;
+      span {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &-toggle {
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    line-height: 1;
+    padding-inline: 1.5rem;
+    transition: var(--transition);
+    border: none;
+    color: inherit;
+
+    .menu-name {
+      display: inline-block;
+      margin-top: 1.5rem;
+    }
+
+    .icon-bar {
+      display: block;
+      width: 4rem;
+      height: 4px;
+      border-radius: 1px;
+      background-color: var(--clr-white);
+      transition: var(--transition);
+
+      + .icon-bar {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__search {
+    background: transparent;
+    border: none;
+    color: inherit;
+  }
+
+  @include breakpoint(medium) {
+    &__small {
+      background-color: var(--clr-white);
+      color: var(--clr-black);
+
+      .header__toggle {
+        display: none;
+      }
+    }
+
+    &__search {
+      order: -1;
+    }
+  }
+}

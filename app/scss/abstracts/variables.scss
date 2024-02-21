@@ -1,27 +1,45 @@
-@use '../util' as *;
-
 :root {
   // Colors
-  --clr-black: #000;
+  --clr-primary: #c5050c;
+  --clr-secondary: #777777;
+  --clr-tertiary: #6e6e6e;
+  --clr-success: #5cb85c;
+  --clr-alt-link: #0054ad;
+  --clr-warning: #fff3d9;
+  --clr-warning-em: #ffae00;
+  --clr-danger: #a94442;
+  --clr-danger-bg: #f2dede;
+  --clr-alert: #ec5840;
+  --clr-light-gray: #f1f1f1;
+  --clr-light-gray-2: #e1e1e1;
+  --clr-light-gray-3: #cacaca;
+  --clr-dark-gray: #818181;
+  --clr-black: #3e3e3e;
   --clr-white: #fff;
+  --clr-off-white: #fefefe;
+  --clr-disabled: #727272;
+  --clr-info: #0dcaf0;
 
   // Font-family
-  --ff-sans: 'Inter', Arial, Helvetica, sans-serif;
+  --ff-sans: 'Verlag A', 'Verlag B', Helvetica, Arial, sans-serif;
   --ff-mono: 'Source Code Pro', monospace;
   --ff-serif: Cambria, Cochin, Georgia, serif;
 
   // Font-sizes
-  --fs-4xlarge: #{rem(61.04)};
-  --fs-3xlarge: #{rem(48.832)};
-  --fs-2xlarge: #{rem(39.06)};
-  --fs-xlarge: #{rem(31.25)};
-  --fs-large: #{rem(25)};
-  --fs-med: #{rem(20)};
-  --fs-reg: #{rem(16)};
-  --fs-small: #{rem(12.8)};
-  --fs-xsmall: #{rem(10.24)};
+  --fs-4xlarge: 6.104rem;
+  --fs-3xlarge: 4.8832rem;
+  --fs-2xlarge: 3.906rem;
+  --fs-xlarge: 3.125rem;
+  --fs-large: 2.5rem;
+  --fs-med: 2rem;
+  --fs-reg: 1.6rem;
+  --fs-small: 1.28rem;
+  --fs-xsmall: 1.024rem;
 
   // Flexbox gap/columns
-  --gap: #{rem(20)};
+  --gap: 2rem;
   --columns: 2;
+
+  // Transition
+  --transition: all 0.25s ease-in-out;
 }
