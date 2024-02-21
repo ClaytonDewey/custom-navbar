@@ -7,7 +7,11 @@
   <link rel="stylesheet" href="./dist/style.css">
   <title>Sass Starter File</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7292020/6907632/css/fonts.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -51,19 +55,24 @@
     </div>
   </header>
 
-  <nav id="nav-ubs" class="navigation">
+  <div id="nav-ubs" class="navigation">
     <div class="navigation__wrapper">
-      <a href="/" class="navigation--link">New Arrivals</a>
-      <a href="/" class="navigation--link">Clothing</a>
-      <a href="/" class="navigation--link">Gifts</a>
-      <a href="/" class="navigation--link">School Supplies</a>
-      <a href="/" class="navigation--link">Textbooks &amp; Course Materials</a>
-      <a href="/" class="navigation--link">Tech</a>
-      <a href="/" class="navigation--link">Gift Cards</a>
-      <a href="/" class="navigation--link">Cap &amp; Gown</a>
-      <a href="/" class="navigation--link">About</a>
+      <button class="navigation__close">
+        <i class="fa fa-times" aria-hidde="true"></i> Close Menu
+      </button>
+      <nav class="navigation__menu">
+        <a href="/" class="navigation__menu--link">New Arrivals</a>
+        <a href="/" class="navigation__menu--link">Clothing</a>
+        <a href="/" class="navigation__menu--link">Gifts</a>
+        <a href="/" class="navigation__menu--link">School Supplies</a>
+        <a href="/" class="navigation__menu--link">Textbooks &amp; Course Materials</a>
+        <a href="/" class="navigation__menu--link">Tech</a>
+        <a href="/" class="navigation__menu--link">Gift Cards</a>
+        <a href="/" class="navigation__menu--link">Cap &amp; Gown</a>
+        <a href="/" class="navigation__menu--link">About</a>
+      </nav>
     </div>
-  </nav>
+  </div>
 
 
   <main id="ContainDiv" class="container contain clear">
@@ -87,6 +96,7 @@
     </div>
   </main>
 
+  <script src="./dist/script.js"></script>
 </body>
 
 </html>
