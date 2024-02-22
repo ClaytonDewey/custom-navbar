@@ -1,0 +1,103 @@
+@use '../util' as *;
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__image {
+  background-color: var(--clr-white);
+  padding-bottom: 4rem;
+}
+
+.carousel {
+  // margin-top: 1rem;
+  border: 1px solid lightslategray;
+  // border-top: none;
+  text-align: center;
+
+  .img {
+    &-small {
+      @include breakpoint(small) {
+        display: none !important;
+      }
+    }
+
+    &-medium {
+      display: none !important;
+    }
+
+    &-large {
+      display: none !important;
+
+      @include breakpoint(small) {
+        display: block !important;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    // margin-top: 2rem;
+  }
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+@include breakpoint(medium) {
+  .carousel-indicators {
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    z-index: 0;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    display: block;
+
+    [data-bs-target] {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 1px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: #000 \9;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid var(--clr-black);
+      border-radius: 10px;
+    }
+  }
+
+  .carousel-indicators button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    // background-color: #000 \9;
+    // background-color: rgba(0, 0, 0, 0);
+    // border: 1px solid ;
+    border-radius: 10px;
+  }
+
+  .carousel-indicators button,
+  .carousel-indicators .active {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 100%;
+  }
+
+  .carousel-indicators button {
+    background-color: transparent;
+    border: 2px solid var(--clr-black);
+  }
+
+  .carousel-indicators button.active {
+    background-color: var(--clr-black);
+  }
+}

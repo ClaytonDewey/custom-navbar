@@ -85,3 +85,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: darkred;
 }
+
+.dt-hide {
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.mobi-hide {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+}

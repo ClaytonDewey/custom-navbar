@@ -3,6 +3,7 @@
 .header {
   position: relative;
   margin: 0 auto;
+  max-width: 129rem;
 
   &__ubs--logo {
     background: var(--clr-white);
@@ -30,6 +31,10 @@
     &__ubs--logo {
       margin: 0;
     }
+  }
+
+  @include breakpoint(large) {
+    padding-inline: 0;
   }
 }
 
