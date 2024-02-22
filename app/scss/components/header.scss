@@ -40,7 +40,7 @@
 
 // Navbar Toggle
 .navbar {
-  &__small {
+  &__links {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -69,6 +69,7 @@
       span {
         text-transform: uppercase;
         font-size: 1.2rem;
+        font-weight: 600;
       }
     }
   }
@@ -109,7 +110,7 @@
   }
 
   @include breakpoint(medium) {
-    &__small {
+    &__links {
       background-color: var(--clr-white);
       color: var(--clr-black);
 

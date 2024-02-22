@@ -1,19 +1,12 @@
 @use '../util' as *;
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
 .hero__image {
   background-color: var(--clr-white);
   padding-bottom: 4rem;
 }
 
 .carousel {
-  // margin-top: 1rem;
   border: 1px solid lightslategray;
-  // border-top: none;
   text-align: center;
 
   .img {
