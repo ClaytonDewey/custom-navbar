@@ -2,6 +2,8 @@
 const navOpen = document.querySelector('.navbar-toggle');
 const navContainer = document.getElementById('nav-ubs');
 const navClose = document.querySelector('.nav__close');
+const searchBtn = document.getElementById('search');
+const search = document.querySelector('.search');
 
 const dropdownToggle = document.querySelectorAll('.toggle-dropdown');
 
@@ -25,4 +27,9 @@ dropdownToggle.forEach((event) => {
     // console.log(e.target.parentNode);
     e.target.parentNode.classList.toggle('active');
   });
+});
+
+searchBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  search.classList.toggle('open');
 });

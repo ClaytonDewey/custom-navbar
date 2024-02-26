@@ -25,11 +25,14 @@
 <body>
   <div id="ship99" class="banner">
     <div id="toggle-exclusions" class="banner__message banner__info">
-      <div>
+      <!-- <div>
         Free Ground Shipping with <em class="num-lg">$99</em>&nbsp;Order*. <span class="hide-sm">Must Enter Code: <span
             class="promo__code">Ship99</span></span> <span class="small">(Click for
           Details)</span>
-      </div>
+      </div> -->
+
+      <div>$99+ = Free Shipping <i class="fa fa-mouse-pointer" aria-hidden="true" style="margin-left: 1rem;"></i> <span
+          class="sr-only">Click for Details</span></div>
     </div>
     <!-- <div id="exclusions" class="banner__dropdown">
       <div class="row">
@@ -59,32 +62,50 @@
     </div>
 
 
-    <div class="navbar__links">
-      <div class="header__toggle">
-        <button class="navbar-toggle" aria-expanded="false">
-          <i class="fa fa-bars" aria-hidden="true"></i>
+    <ul class="navbar__links">
+      <li class="navbar__toggle">
+        <div class="header__toggle">
+          <button class="navbar-toggle" aria-expanded="false">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <span>Menu</span>
+        </div>
+      </li>
+
+      <li>
+        <a href="https://www.uwbookstore.com/login" class="navbar__account">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <span>Sign In</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.uwbookstore.com/shoppingcart" class="navbar__cart">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span>0 Items</span>
+        </a>
+      </li>
+
+      <li class="search">
+        <button id="search" class="navbar__search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span>Search</span>
         </button>
-        <span>Menu</span>
-      </div>
+        <div class="search__form">
+          <div class="search__form--input">
+            <label for="search-term" class="sr-only">Search</label>
+            <input type="search" id="search-term" class="search-field form-control" placeholder="Search...">
+          </div>
 
-      <a href="/" class="navbar__account">
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <span>Sign In</span>
-      </a>
-
-      <a href="/" class="navbar__cart">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <span>0 Items</span>
-      </a>
-
-      <button class="navbar__search">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <span>Search</span>
-      </button>
-    </div>
+          <div class="search__form--submit">
+            <input type="submit" value="Go" class="search-submit btn btn-primary" tabindex="0">
+          </div>
+        </div>
+      </li>
+    </ul>
   </header>
 
-  <div id="nav-ubs" class="nav__container open">
+  <div id="nav-ubs" class="nav__container">
     <div class="nav__wrapper">
       <nav class="nav__menu">
         <button class="nav__close">
@@ -95,7 +116,7 @@
             <a href="https://www.uwbookstore.com/Wisconsin-Badgers/gift-items/New-Items" class="nav__menu--link">New
               Arrivals</a>
           </li>
-          <li class="active">
+          <li>
             <a href="#" class="nav__menu--link toggle-dropdown">Clothing</a>
             <ul class="nav__menu--sub">
               <li>
