@@ -3,7 +3,7 @@
 .header {
   position: relative;
   margin: 0 auto;
-  max-width: 160rem;
+  max-width: 120rem;
 
   &__ubs--logo {
     background: var(--clr-white);
@@ -58,8 +58,10 @@
       height: 6.5rem;
       width: 7rem;
       text-align: center;
+      justify-content: center;
 
-      i {
+      i,
+      em {
         font-size: 3.5rem;
       }
 
@@ -77,6 +79,17 @@
         justify-content: space-between;
         text-decoration: none;
         color: inherit;
+      }
+
+      .header__toggle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .navbar-toggler {
+        padding: 0;
       }
     }
   }
@@ -111,7 +124,8 @@
         height: auto;
         gap: 5px;
 
-        i {
+        i,
+        em {
           font-size: 2.4rem;
         }
 
@@ -213,7 +227,7 @@
       position: relative;
 
       &--input {
-        width: 80%;
+        width: 90%;
 
         input {
           font-size: inherit;
@@ -223,7 +237,7 @@
           width: 100%;
           display: inline;
           box-shadow: none;
-          padding-left: 1em;
+          padding-left: 1rem;
           height: 3.5rem;
         }
       }
